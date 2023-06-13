@@ -248,18 +248,19 @@ a:hover {
 
 /* box de serviços */
 .box {
-    background: url("../img/corrimao/1.jpeg") center center no-repeat;
+    background: url("../img/corrimao/home.jpg") center center no-repeat;
     background-size: cover;
     margin: auto;
     position: relative;
     max-width: 70%;
+    padding-bottom: 70%;
 }
 
-.box:after {
+/* .box:after {
     content: '';
     display: block;
     padding-top: calc(100%);
-}
+} */
 
 /* box one */
 .box .box-title {
@@ -488,6 +489,7 @@ footer {
 @media (max-width: 1400px) {
     .box {
         max-width: 70%;
+        padding-bottom: 70%;
     }
     .grafismo {
         width: 94.7%;
@@ -497,6 +499,7 @@ footer {
 @media (max-width: 1200px) {
     .box {
         max-width: 80%;
+        padding-bottom: 80%;
     }
     .grafismo {
         width: 94%;
@@ -512,6 +515,7 @@ footer {
 @media (max-width: 992px) {
     .box {
         max-width: 100%;
+        padding-bottom: 100%;
     }
 
     .box-description {
@@ -538,6 +542,7 @@ footer {
 
     .box {
         max-width: 100%;
+        padding-bottom: 100%;
     }
 
     .box h5 {
