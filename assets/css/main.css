@@ -343,6 +343,18 @@ a:hover {
     background-size: auto 100%;
 }
 
+#header-inspire-se .container {
+    background: url("../img/inspire-se/header-inpire-se.jpg") no-repeat;
+    background-position: 100% 50%;
+    background-size: auto 100%;
+}
+
+#header-sobre-nos .container{
+    background: url("../img/sobre-nos/header-sobre-nos.jpg") no-repeat;
+    background-position: 100% 50%;
+    background-size: auto 100%;
+}
+
 /* galeria */
 .galeria {
     display: grid;

@@ -18,54 +18,58 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar fixed-top">
         <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="assets/img/logo.svg" alt="Logo Vetropluss" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <div class="navbar-buttom">
+                    <div class="navbar-icon navbar-icon-1"></div>
+                    <div class="navbar-icon navbar-icon-2"></div>
+                    <div class="navbar-icon navbar-icon-3"></div>
+                </div>
+            </button>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+        data-bs-scroll="true">
+        <div class="offcanvas-header">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.svg" alt="Logo Vetropluss" class="img-fluid">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item border-left">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item border-left">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item border-left">
-                        <a class="nav-link" href="#">11.4271-6271 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">11.92232-4212</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#" class="btn btn-primary">SOLICITAR ORÇAMENTO</a>
-                    </li>
-                </ul>
-            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav bd-navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/inspire-se.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/inspire-se.html">Inspire-se</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre-nos.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#formulario" class="btn btn-primary mt-5 w-100">SOLICITAR ORÇAMENTO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <section class="header" id="header-corrimao">
+    <section class="header" id="header-inspire-se">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-8 col-md-4 col-xl-3 d-flex align-items-md-end">
-                    <div class="mb-3">
-                        <h1>Corrimão &
-                            Guarda Corpo
+                    <div class="mb-3 mt-3 mt-md-0">
+                        <h1>Inspire-se
                         </h1>
-                        <p>uma verdadeira obra-prima da engenharia,
-                            combina elegância e proteção de forma impecável</p>
+                        <p>pela nobreza do vidro.</p>
                     </div>
                 </div>
             </div>
@@ -76,61 +80,72 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>O Box Ideal feito
-                        sob medida
-                        Exclusivamente para você.</h2>
+                    <h2>Uma coisa é fazer um trabalho.
+                        Outra é se entregar para um ofício.</h2>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="container galeria-inpire-se">
-        <a data-fancybox="gallery" href="assets/img/corrimao/1.jpeg" class="itemGaleria item01">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/1.jpg" class="itemGaleria item01">
             <!-- <p>1, item01</p> -->
             <figure class="imgGaleria">
-                <img src="assets/img/corrimao/1.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="assets/img/inspire-se/1.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/2.jpeg" class="itemGaleria item02">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/2.jpg" class="itemGaleria item02">
             <!-- <p>2 item02</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/2.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/2.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/3.jpeg" class="itemGaleria item03">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/3.jpg" class="itemGaleria item03">
             <!-- <p>3 item03</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/3.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/3.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/4.jpeg" class="itemGaleria item04">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/4.jpg" class="itemGaleria item04">
             <!-- <p>4 item04</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/4.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/4.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/7.jpeg" class="itemGaleria item01">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/5.jpg" class="itemGaleria item01">
             <!-- <p>7 item01</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/7.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/5.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/8.jpeg" class="itemGaleria item02">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/6.jpg" class="itemGaleria item02">
             <!-- <p>8 item02</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/8.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/6.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/9.jpeg" class="itemGaleria item03">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/7.jpg" class="itemGaleria item03">
             <!-- <p>9 item03</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/9.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/7.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
-        <a data-fancybox="gallery" href="assets/img/corrimao/10.jpeg" class="itemGaleria item04">
+        <a data-fancybox="gallery" href="assets/img/inspire-se/8.jpg" class="itemGaleria item04">
             <!-- <p>10 item04</p> -->
             <figure class="imgGaleria">
-                <img src="./assets/img/corrimao/10.jpeg" alt="Imagem 01" class="imgGaleria">
+                <img src="./assets/img/inspire-se/8.jpg" alt="Imagem 01" class="imgGaleria">
+            </figure>
+        </a>
+        <a data-fancybox="gallery" href="assets/img/inspire-se/9.jpg" class="itemGaleria item01">
+            <!-- <p>7 item01</p> -->
+            <figure class="imgGaleria">
+                <img src="./assets/img/inspire-se/9.jpg" alt="Imagem 01" class="imgGaleria">
+            </figure>
+        </a>
+        <a data-fancybox="gallery" href="assets/img/inspire-se/10.jpg" class="itemGaleria item02">
+            <!-- <p>8 item02</p> -->
+            <figure class="imgGaleria">
+                <img src="./assets/img/inspire-se/10.jpg" alt="Imagem 01" class="imgGaleria">
             </figure>
         </a>
     </section>
@@ -152,7 +167,7 @@
         </div>
     </section>
 
-    <section class="formulario">
+    <section id="formulario" class="formulario">
         <div class="container h-100">
             <div class="row h-100 justify-content-between justify-content-xl-start">
                 <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between">
@@ -198,6 +213,33 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-color-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3 col-lg-2">
+                    <a href="#">
+                        <img src="assets/img/logo-Vetropluss-white.svg" alt="Logo" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        window.addEventListener("scroll", () => {
+            var curr = window.pageYOffset;
+            if (curr > 50) {
+                console.log("Scroll true")
+                document.querySelector('.navbar').classList.add("active");
+            }
+            if (curr === 0) {
+                document.querySelector('.navbar').classList.remove("active");
+            }
+        });
+    </script>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
