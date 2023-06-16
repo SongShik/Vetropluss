@@ -266,7 +266,6 @@ a:hover {
     padding-bottom: 80%;
     overflow: hidden;
     position: relative;
-    margin: auto;
 }
 
 .destaque .cover {
@@ -315,6 +314,12 @@ a:hover {
 
 .destaque:hover .title{
     opacity: 0;
+}
+
+.destaque-1,
+.destaque-3,
+.destaque-5{
+    margin-left: auto;
 }
 
 /* .destaque-1, destaque-4 */
