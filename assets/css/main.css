@@ -395,7 +395,7 @@ a:hover {
 /*produto */
 #header-corrimao .container {
     background: url("../img/corrimão-guarda-corpo.jpg") no-repeat;
-    background-position: 100% 50%;
+    background-position: 0% 50%;
     background-size: auto 100%;
 }
 
