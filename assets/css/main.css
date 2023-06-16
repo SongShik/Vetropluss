@@ -120,6 +120,20 @@ a:hover {
     backdrop-filter: blur(12px);
 }
 
+.lista,
+.lista-2{ 
+    display: none;
+}
+
+.lista.active,
+.lista-2.active{
+    display: flex ;
+}
+
+.navbar-toggler.active{
+    display: none;
+}
+
 .navbar img,
 .offcanvas img {
     width: 120px;
@@ -246,70 +260,100 @@ a:hover {
     border: 1px solid red;
 }
 
-/* box de serviços */
-.box {
-    background: url("../img/corrimao/home.jpg") center center no-repeat;
-    background-size: cover;
-    margin: auto;
+/* destaque */
+.destaque {
+    max-width: 80%;
+    padding-bottom: 80%;
+    overflow: hidden;
     position: relative;
-    max-width: 70%;
-    padding-bottom: 70%;
+    margin: auto;
 }
 
-/* .box:after {
-    content: '';
-    display: block;
-    padding-top: calc(100%);
-} */
-
-/* box one */
-.box .box-title {
-    position: absolute;
+.destaque .cover {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.2s ease-in;
 }
 
-.box-description {
-    width: 90%;
-    height: 90%;
-    background-image: url("../img/grafismo-branco.png");
+.destaque .gradient {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 1;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-size: cover;
+    transition: top 0.3s ease-in-out;
+}
+
+.destaque .title {
+    height: 90%;
+    width: 90%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 2;
     padding: 1rem;
+    transition: opacity 0.3s ease-in-out;
     color: var(--color-primary);
 }
 
-/* box two */
-.box.two .box-title {
+.destaque:hover .cover{
+    transform: scale(1.1);
+}
+
+.destaque:hover .gradient {
+    top: 200%;
+}
+
+.destaque:hover .title{
+    opacity: 0;
+}
+
+/* .destaque-1, destaque-4 */
+.destaque-1 .gradient,
+.destaque-5 .gradient{
+    width: 90%;
+    height: 90%;
+    background-image: url("../img/grafismo-branco.svg");
+}
+
+/* .destaque-2 */
+.destaque-2 .gradient{
+    width: 101%;
+    height: 101%;
+    background-image: none;
     background-color: var(--color-primary);
 }
 
-.box.two .box-description {
-    background: transparent;
+.destaque-2 .title{
     color: #fff;
 }
 
-/* box three */
-.box.three .box-title {
+/* .destaque-3 */
+.destaque-3 .gradient{
+    width: 101%;
+    height: 101%;
+    background-image: none;
     background-color: var(--color-third);
 }
 
-.box.three .box-description {
-    background: transparent;
+.destaque-3 .title{
     color: #fff;
 }
 
-/* box four */
-.box.four .box-description {
-    background-image: url("../img/grafismo-branco-2.png");
+/* .destaque-4 */
+.destaque-4 .gradient{
+    width: 90%;
+    height: 90%;
+    background-image: url("../img/grafismo-branco-2.svg");
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-size: cover;
@@ -320,16 +364,22 @@ a:hover {
     flex-direction: column;
 }
 
-/* box six */
-.box.six .box-title {
+.destaque-4 .title{
+    justify-content: start;
+    align-items: baseline;
+}
+
+/* .destaque-6 */
+.destaque-6 .gradient{
+    width: 101%;
+    height: 101%;
+    background-image: none;
     background-color: var(--color-secondary);
 }
 
-.box.six .box-description {
-    background: transparent;
-    color: var(--color-third);
+.destaque-6 .title{
+    color: var(--color-third)
 }
-
 
 /* bloco-separador */
 .bloco-separador {
@@ -364,7 +414,7 @@ a:hover {
     /* grid-auto-rows: 400px; */
     /* grid-auto-flow: row; */
     gap: .5rem;
-    grid-template-rows: minmax(50px, max-content) 2fr;
+    grid-template-rows: minmax(50px, max-content);    
 }
 
 .galeria .imgGaleria {
@@ -459,7 +509,6 @@ a:hover {
     grid-column: span 8;
 }
 
-
 /* sobre-nos */
 .img-sobre-nos {
     width: 100%;
@@ -487,22 +536,29 @@ footer {
 
 /* responsivo */
 @media (max-width: 1400px) {
-    .box {
-        max-width: 70%;
-        padding-bottom: 70%;
-    }
     .grafismo {
         width: 94.7%;
     }
 }
 
 @media (max-width: 1200px) {
-    .box {
-        max-width: 80%;
-        padding-bottom: 80%;
+    .destaque {
+        max-width: 90%;
+        padding-bottom: 90%;
     }
     .grafismo {
         width: 94%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .lista,
+    .lista-2{ 
+        display: none !important;
+    }
+    
+    .navbar-toggler{
+        display: block !important;
     }
 }
 
@@ -513,7 +569,7 @@ footer {
 }
 
 @media (max-width: 992px) {
-    .box {
+    .destaque {
         max-width: 100%;
         padding-bottom: 100%;
     }
@@ -540,16 +596,16 @@ footer {
         width: 100%;
     }
 
-    .box {
+    .destaque {
         max-width: 100%;
         padding-bottom: 100%;
     }
 
-    .box h5 {
+    .destaque h5 {
         font-size: 18px;
     }
 
-    .box-description {
+    .destaque-title {
         width: 90%;
         height: 90%;
         padding: 0.5rem;
