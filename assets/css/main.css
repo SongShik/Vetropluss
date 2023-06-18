@@ -646,10 +646,16 @@ footer {
         font-size: 18px;
     }
 
-    .destaque-title {
-        width: 90%;
-        height: 90%;
-        padding: 0.5rem;
+    .destaque-1 .gradient, .destaque-5 .gradient,
+    .destaque-4 .gradient {
+        width: 95%;
+        height: 95%;
+    }
+
+    .destaque .title {
+        width: 95%;
+        height: 95%;
+        padding: 0.8rem;
     }
 
     .galeria .item01 {
